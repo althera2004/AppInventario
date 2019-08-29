@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\config.xml",
+        "source": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\provider_paths.xml",
+        "source": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\res\\xml\\provider_paths.xml"
+    }
+]

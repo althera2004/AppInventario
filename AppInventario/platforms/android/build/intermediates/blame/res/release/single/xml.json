@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\build\\intermediates\\res\\merged\\release\\xml\\config.xml",
+        "source": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Juan\\Documents\\Visual Studio 2017\\Projects\\AppInventario\\AppInventario\\platforms\\android\\build\\intermediates\\res\\merged\\release\\xml\\config.xml",
+        "source": "C:\\Users\\Juan\\Documents\\Visual Studio 2017\\Projects\\AppInventario\\AppInventario\\platforms\\android\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Juan\\Documents\\Visual Studio 2017\\Projects\\AppInventario\\AppInventario\\platforms\\android\\build\\intermediates\\res\\merged\\release\\xml\\provider_paths.xml",
+        "source": "C:\\Users\\Juan\\Documents\\Visual Studio 2017\\Projects\\AppInventario\\AppInventario\\platforms\\android\\res\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\build\\intermediates\\res\\merged\\release\\xml\\provider_paths.xml",
+        "source": "C:\\Proyectos\\AppInventario\\AppInventario\\platforms\\android\\res\\xml\\provider_paths.xml"
+    }
+]
