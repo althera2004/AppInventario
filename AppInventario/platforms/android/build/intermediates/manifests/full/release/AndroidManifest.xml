@@ -3,10 +3,10 @@
     package="com.constraula.inventario"
     android:hardwareAccelerated="true"
     android:versionCode="1"
-    android:versionName="14.0.0" >
+    android:versionName="20.0.0" >
 
     <uses-sdk
-        android:maxSdkVersion="25"
+        android:maxSdkVersion="16"
         android:minSdkVersion="14"
         android:targetSdkVersion="16" />
 

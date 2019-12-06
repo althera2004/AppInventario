@@ -1,0 +1,90 @@
+body {
+   margin:0;
+   padding:0;
+   font-size:1.1em;
+   font-family:Roboto,Helvetica,sans-serif;
+   background:#fff;
+   color:#333;
+   -webkit-backface-visibility: hidden;
+   -webkit-touch-callout: none !important;
+   -webkit-box-sizing: border-box;
+   overflow: hidden;
+   font-weight:300;
+}
+A { text-decoration:none; }
+UL { list-style:none; margin:0; padding:0; }
+
+/* menu lateral */
+div#menu {
+   background:#00bcd4;
+   color:#fff;
+   display:block;
+   position: absolute;
+   top:0;
+   left:0;
+   -webkit-transform: translate3d(-101%,0px,0); /* desaparecemos el menú por defecto */
+   overflow-x: hidden;
+   overflow-y: scroll;
+   width:250px; /* este ancho puede cambiar, va junto con .menuopen */
+   color:#fff;
+   z-index:14999;
+   min-height:150%;
+   -webkit-transition: all 0.4s ease-out;
+}
+/* cuando se pone encima. */
+.menus {
+   -webkit-transform: translate3d(0,0,0) !important;
+   -webkit-transition: all 0.2s ease-out;
+}
+
+div#menu LI {
+   border-bottom:1px solid #008c9d;
+   padding:15px 20px;
+}
+div#menu LI:hover {
+   background:#43cadd;
+}
+div#menu H4 { margin:0; font-weight:300 ; font-size:1.6em; text-align:center; padding-top:10px; }
+/* menú superior */
+div#menutop {
+   background:#00838f;
+   height:44px;
+   line-height: 40px;
+   color:#fff;
+   text-align:Center;
+   font-weight:bold;
+}
+div#menutop img { float:left; padding:0 10px; }
+/* contenido */
+div#content {
+   -webkit-backface-visibility: hidden;
+   -webkit-transition: all 0.3s ease-in;
+   position:relative;
+   left:0; top:0;
+   display:block;
+}
+div.container {
+   display:block;
+   padding:10px;
+}
+
+/* cuando #menu está abierto */
+.menuopen {
+   -webkit-transition: all .2s ease-out;
+   -webkit-transform: translate3d(250px, 0px, 0);
+   position:fixed !important;
+   overflow:hidden; left:0; top:0;
+}
+/* capa encima */
+.open {
+   display:block !important;
+   background:rgba(0,0,0,.25);
+   -webkit-transition: all 0.2s;
+}
+.lopen {
+   position:fixed;
+   top:0; left:0;
+   z-index:998; height:100%; width:100%;
+   display:none; -webkit-transition: all 0.2s;
+}
+div#estado { color:#900; font-size:3em; }

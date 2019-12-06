@@ -32,13 +32,21 @@ function RenderList() {
     if (res === "") {
         res = "<div style=\"margin:4px;padding:8px;border:1px solid #333;background-color:#f01010;color:#f6f610;\"><strong>Ho hi ha cap adjudicació disponible per aquest usuari</strong></div>";
         res += "<br /><br />";
-        res += "<button id=\"BackButton\" style=\"width:100%;\"> Sortir </button>"
+        res += "<button id=\"BackButton\" style=\"width:100%;\"> Sortir </button>";
         list.innerHTML = res;
     }
 }
 
 function Go(sender) {
-    document.location = "captura.html?id=" + this.id.substring(2);
+    var tipo = 1;
+    for (var x = 0; x < adjudicaciones.length; x++) {
+        if ("Go" + adjudicaciones[x].Id === this.id) {
+            tipo = adjudicaciones[x].T;
+            break;
+        }
+    }
+
+    document.location = "captura.html?id=" + this.id.substring(2) + "&T=" + tipo;
 }
 
 function goLogin() {

@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' content-src: http://core.openframework.es http://ctman.constraula.com https://csi.gstatic.com/ https://maps.gstatic.com https://fonts.googleapis.com https://nominatim.openstreetmap.org/ https://reverse.geocoder.api.here.com/ https://eu1.locationiq.com/ data: gap: https://ssl.gstatic.com http://ctman.constraula.com https://csi.gstatic.com/ https://maps.gstatic.com https://fonts.googleapis.com https://unpkg.com https://api.tiles.mapbox.com https://nominatim.openstreetmap.org/ https://reverse.geocoder.api.here.com/ 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;font-src 'self' https://fonts.gstatic.com;">
-
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -11,7 +10,6 @@
     <meta name="description" content="Inventario Constraula" />
     <title>Constraula</title>
     <meta name="robots" content="noindex,nofollow" />
-
     <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
     <link type="text/css" href="css/navbar-static-top.css" rel="stylesheet" />
     <link type="text/css" href="css/bootstrap-select.min.css" rel="stylesheet" />
@@ -120,6 +118,26 @@
                             </select>
                         </div>
                     </div>
+                    <div class="form-group" style="display:none;" id="RowSubzona">
+                        <div class="col col-sm-3">
+                            <label for="CMBSubzona">Subzona:</label>
+                        </div>
+                        <div class="col col-sm-9">
+                            <select id="CMBSubzona" class="form-control">
+                                <option value="0">...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col col-sm-3">
+                            <label for="CMBFamilia">Familia:</label>
+                        </div>
+                        <div class="col col-sm-9">
+                            <select id="CMBFamilia" class="form-control">
+                                <option value="0">...</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <div class="col col-sm-3">
                             <label for="CMBElemento">Elemento:</label>
@@ -173,21 +191,21 @@
             <div class="row" id="ImageGallery"></div>
         </div>
     </div> <!-- /container -->
-<nav class="navbar navbar-default navbar-fixed-bottom">
-    <!--<div class="col col-xs-3">
-        <button type="button" class="form-control" style="color: #fff; background-color: grey" id="BtnGPS"><i class="fa fa-map-marker"></i></button>
-    </div>-->
-    <div id="BtnPhoto" style="background-color:grey;text-align:center;float:left;width:33%;height:50px;">
-        <i class="fa fa-camera" style="margin-top:14px;font-size:24px;"></i>
-    </div>
-    <div id="BtnSave" style="background-color:green;text-align:center;float:left;width:34%;height:50px;">
-        <i class="fa fa-save" style="margin-top:14px;font-size:24px;"></i>
-    </div>
-    <div id="BtnCancel"  style="background-color:red;text-align:center;float:left;width:33%;height:50px;">
-        <i class="fa fa-times" style="margin-top:14px;font-size:24px;"></i>
-    </div>
-</nav>
-     
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <!--<div class="col col-xs-3">
+            <button type="button" class="form-control" style="color: #fff; background-color: grey" id="BtnGPS"><i class="fa fa-map-marker"></i></button>
+        </div>-->
+        <div id="BtnPhoto" style="background-color:grey;text-align:center;float:left;width:33%;height:50px;">
+            <i class="fa fa-camera" style="margin-top:14px;font-size:24px;"></i>
+        </div>
+        <div id="BtnSave" style="background-color:green;text-align:center;float:left;width:34%;height:50px;">
+            <i class="fa fa-save" style="margin-top:14px;font-size:24px;"></i>
+        </div>
+        <div id="BtnCancel" style="background-color:red;text-align:center;float:left;width:33%;height:50px;">
+            <i class="fa fa-times" style="margin-top:14px;font-size:24px;"></i>
+        </div>
+    </nav>
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
@@ -195,7 +213,9 @@
     <script type="text/javascript" src="scripts/bootbox.js"></script>
     <script type="text/javascript" src="scripts/captura2.js"></script>
     <script type="text/javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=AdjudicacionesByUserId&userId=81&var=adjudicaciones"></script>
-    <script type="text/Javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=ELEMENTOSGETACTIVE&var=elementos"></script>
+    <script type="text/Javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=FAMILIASGETACTIVE&var=familias"></script>
+    <script type="text/Javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=ELEMENTOSGETACTIVE2&var=elementos"></script>
+    <script type="text/Javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=SUBZONASGETACTIVE&var=subzonas"></script>
     <script type="text/javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=NivelesProblemaACTIVE&var=nivelesProblemas"></script>
     <script type="text/javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=PatologiasACTIVE&var=patologias"></script>
     <script type="text/javascript" src="http://ctman.constraula.com/customersframework/constraula/data/itemdatabase.aspx?getscript=BarriosACTIVE&var=barrios"></script>

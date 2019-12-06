@@ -8,7 +8,7 @@
     <AndroidEmulatorID>AndroidDevice;Dispositivo</AndroidEmulatorID>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
-    <DebuggerFlavor>SimulateGalaxyNote7</DebuggerFlavor>
+    <DebuggerFlavor>SimulateG5</DebuggerFlavor>
     <AndroidEmulatorID>AndroidDevice;Dispositivo</AndroidEmulatorID>
   </PropertyGroup>
 </Project>
